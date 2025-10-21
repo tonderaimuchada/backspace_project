@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 
 // project import
 import { NavigationItem, NavigationItems } from '../navigation';
-import { environment } from 'src/environments/environment';
 
 import { NavGroupComponent } from './nav-group/nav-group.component';
 
@@ -42,7 +41,6 @@ export class NavContentComponent implements OnInit {
 
   // version
   title = 'Demo application for version numbering';
-  currentApplicationVersion = environment.appVersion;
 
   navigation = NavigationItems;
   windowWidth = window.innerWidth;

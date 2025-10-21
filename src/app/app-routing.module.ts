@@ -22,7 +22,7 @@ const routes: Routes = [
       },
       {
         path: 'product',
-        loadComponent: () => import('./demo/others/product/product.component').then((c) => c.ProductComponent)
+        loadComponent: () => import('./demo/component/product/product.component').then((c) => c.ProductComponent)
       }
     ]
   },
