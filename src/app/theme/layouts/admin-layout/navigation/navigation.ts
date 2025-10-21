@@ -39,7 +39,7 @@ export const NavigationItems: NavigationItem[] = [
         title: 'Products',
         type: 'item',
         classes: 'nav-item',
-        url: '/dashboard/products', //url: '/sample-page',
+        url: '/product',
         icon: 'chrome',
         breadcrumbs: false
       }

@@ -21,8 +21,8 @@ const routes: Routes = [
         loadComponent: () => import('./demo/dashboard/default/default.component').then((c) => c.DefaultComponent)
       },
       {
-        path: 'sample-page',
-        loadComponent: () => import('./demo/others/sample-page/sample-page.component').then((c) => c.SamplePageComponent)
+        path: 'product',
+        loadComponent: () => import('./demo/others/product/product.component').then((c) => c.ProductComponent)
       }
     ]
   },
