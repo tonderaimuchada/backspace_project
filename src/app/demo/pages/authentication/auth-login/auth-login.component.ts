@@ -8,4 +8,6 @@ import { RouterModule } from '@angular/router';
   templateUrl: './auth-login.component.html',
   styleUrl: './auth-login.component.scss'
 })
-export class AuthLoginComponent {}
+export class AuthLoginComponent {
+  login(){} // API call to the login endpoint with, passing credentials
+}

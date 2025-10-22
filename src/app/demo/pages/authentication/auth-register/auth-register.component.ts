@@ -8,4 +8,6 @@ import { RouterModule } from '@angular/router';
   templateUrl: './auth-register.component.html',
   styleUrl: './auth-register.component.scss'
 })
-export class AuthRegisterComponent {}
+export class AuthRegisterComponent {
+  register(){} //HTTP call to register endpoint
+}
