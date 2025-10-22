@@ -63,7 +63,7 @@ export const NavigationItems: NavigationItem[] = [
       },
       {
         id: 'register',
-        title: 'Register',
+        title: 'Register Customer',
         type: 'item',
         classes: 'nav-item',
         url: '/register',
