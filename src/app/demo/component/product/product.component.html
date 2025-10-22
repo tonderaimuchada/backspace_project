@@ -15,7 +15,27 @@
               <th>Price</th>
             </tr>
           </thead>
-          
+          <tbody>
+            @for (product of products; track product) {
+              <tr>
+                <td>
+                  <a href="javascript:" class="text-muted">{{ product.name }}</a>
+                </td>
+                <td>{{ product.description }}</td>
+                <td>
+                  <span class="d-block">
+                    {{ product.price }}
+                  </span>
+                </td>
+                <button class="btn btn-primary" data-action="edit">
+                  Edit
+                </button>
+                <button class="btn btn-primary" data-action="delete">
+                  Delete
+                </button>
+              </tr>
+            }
+          </tbody>
         </table>
       </div>
     </div>

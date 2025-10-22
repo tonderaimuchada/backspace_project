@@ -5,11 +5,13 @@ import { Injectable } from "@angular/core";
 @Injectable({ providedIn: 'root' })
 export class ProductService {
     base = 'http://localhost:8080/api/products';
+    products: any = [];
 
     constructor(private http: HttpClient) { }
 
     list() {
-        return this.http.get<Product[]>(this.base);
+        this.products = this.http.get<Product[]>(this.base);
+        return this.products;
     }
 
     create(prod: Product) {

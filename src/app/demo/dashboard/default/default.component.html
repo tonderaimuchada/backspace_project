@@ -14,23 +14,21 @@
               <th>Surname</th>
               <th>Phone Number</th>
               <th>Email</th>
-              <!-- <th class="text-end">TOTAL AMOUNT</th> -->
             </tr>
           </thead>
           <tbody>
-            @for (order of recentOrder; track order) {
+            @for (customer of customers; track customer) {
               <tr>
                 <td>
-                  <a href="javascript:" class="text-muted">{{ order.id }}</a>
+                  <a href="javascript:" class="text-muted">{{ customer.name }}</a>
                 </td>
-                <td>{{ order.name }}</td>
+                <td>{{ customer.surname }}</td>
                 <td>
                   <span class="d-block">
-                    <i class="badge-circle {{ order.status_type }} f-10 m-r-5"></i>
-                    {{ order.status }}
+                    {{ customer.phoneNr }}
                   </span>
                 </td>
-                <td>{{ order.quantity }}</td>
+                <td>{{ customer.email }}</td>
                 <button class="btn btn-primary" data-action="edit">
                   Edit
                 </button>
@@ -40,7 +38,6 @@
                 <button class="btn btn-primary" data-action="delete">
                   View Orders
                 </button>
-                <!-- <td class="text-end">{{ order.amount }}</td> -->
               </tr>
             }
           </tbody>

@@ -5,7 +5,8 @@ import { Customer } from "../models/customer";
 @Injectable({ providedIn: 'root' })
 export class CustomerService {
     base = 'http://localhost:8080/api/customers';
-
+    customers: Customer[] = [];
+    
     constructor(private http: HttpClient) { }
 
     list() {
